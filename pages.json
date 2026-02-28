@@ -1,0 +1,106 @@
+{
+	"pages": [
+		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/chat/conversation-list/conversation-list",
+			"style": {
+				"navigationBarTitleText": "对话列表",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		{
+			"path": "pages/chat/chat-detail/chat-detail",
+			"style": {
+				"navigationBarTitleText": "聊天详情",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "slide-in-right",
+					"animationDuration": 300
+				}
+			}
+		},
+		{
+			"path": "pages/chat/contact-list/contact-list",
+			"style": {
+				"navigationBarTitleText": "联系人",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		{
+			"path": "pages/chat/contact-detail/contact-detail",
+			"style": {
+				"navigationBarTitleText": "联系人详情",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "slide-in-right",
+					"animationDuration": 300
+				}
+			}
+		},
+		{
+			"path": "pages/chat/profile/profile",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		}
+	],
+	"subPackages": [],
+	"globalStyle": {
+		"pageOrientation": "portrait",
+		"navigationBarTitleText": "Hello uniapp",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#001E3C",
+		"backgroundColor": "#001225",
+		"backgroundColorTop": "#001E3C",
+		"backgroundColorBottom": "#001E3C",
+		"mp-360": {
+			"navigationStyle": "custom"
+		},
+		"h5": {
+			"maxWidth": 1190,
+			"navigationBarTextStyle": "white",
+			"navigationBarBackgroundColor": "#001E3C",
+			"backgroundColor": "#001225"
+		}
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#8092A6",
+		"selectedColor": "#00BFFF",
+		"borderStyle": "black",
+		"backgroundColor": "#001E3C",
+		"list": [{
+				"pagePath": "pages/chat/conversation-list/conversation-list",
+				"iconPath": "static/home-active.png",
+				"selectedIconPath": "static/home-active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/chat/contact-list/contact-list",
+				"iconPath": "static/c1.png",
+				"selectedIconPath": "static/c1.png",
+				"text": "联系人"
+			},
+			{
+				"pagePath": "pages/chat/profile/profile",
+				"iconPath": "static/uni.png",
+				"selectedIconPath": "static/uni.png",
+				"text": "我的"
+			}
+		]
+	}
+}
